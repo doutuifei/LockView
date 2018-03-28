@@ -11,43 +11,19 @@
         android:id="@+id/lockView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:count="3" />
+        app:count="3"
+        app:try_num="5"/>
 
-    <ScrollView
+    <Button
+        android:id="@+id/btnReset"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:text="重置" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <EditText
-                android:id="@+id/edit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/btnReset"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="重置" />
-
-            <Button
-                android:id="@+id/btnSet"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="设置数量" />
-
-            <Button
-                android:id="@+id/btnSetPsd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="设置设置密码：12369" />
-
-
-        </LinearLayout>
-
-    </ScrollView>
+    <Button
+        android:id="@+id/btnSetPsd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置设置密码：12369" />
 
 </LinearLayout>

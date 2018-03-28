@@ -6,7 +6,6 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
-import android.support.annotation.IntRange;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
@@ -154,7 +153,6 @@ public class LockView extends RelativeLayout {
         }
         setMeasuredDimension(mWidth, mHeight);
     }
-
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -358,15 +356,6 @@ public class LockView extends RelativeLayout {
         invalidate();
     }
 
-    /**
-     * 设置数量
-     *
-     * @param count
-     */
-    public void setCount(@IntRange(from = 1) int count) {
-        mCount = count;
-        requestLayout();
-    }
 
     private OnLockState onLockState;
 

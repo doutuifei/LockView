@@ -3,8 +3,6 @@ package com.muzi.lockview;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.muzi.library.LockView;
@@ -18,16 +16,8 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.edit)
-    EditText edit;
-    @BindView(R.id.btnReset)
-    Button btnReset;
-    @BindView(R.id.btnSet)
-    Button btnSet;
     @BindView(R.id.lockView)
     LockView lockView;
-    @BindView(R.id.btnSetPsd)
-    Button btnSetPsd;
 
     private StringBuilder builder = new StringBuilder();
     private List<Integer> defaultPsd = new ArrayList<>();
@@ -70,16 +60,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @OnClick({R.id.btnReset, R.id.btnSet, R.id.btnSetPsd})
+    @OnClick({R.id.btnReset, R.id.btnSetPsd})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnReset:
+                //清空
                 lockView.setReset();
                 break;
-            case R.id.btnSet:
-                lockView.setCount(Integer.parseInt(edit.getText().toString()));
-                break;
+
             case R.id.btnSetPsd:
+                //设置密码
                 lockView.setPsd(defaultPsd);
                 break;
         }
