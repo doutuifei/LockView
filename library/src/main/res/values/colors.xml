@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="topCircleNormalColor">#D1D1D1</color>
+    <color name="innerCircleNormalColor">#918181</color>
+    <color name="topCircleSelectColor">#3081C1</color>
+    <color name="topCircleErrorColor">#F10000</color>
+
+</resources>
