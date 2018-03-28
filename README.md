@@ -5,6 +5,40 @@
 
 [APK下载](https://fir.im/xb47)
 
+## 依赖
+[![](https://jitpack.io/v/mzyq/LockView.svg)](https://jitpack.io/#mzyq/LockView)
+### Gradle
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+```
+dependencies {
+	        compile 'com.github.mzyq:LockView:{VERSION}'
+	}
+```
+### Maven
+```
+<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+```
+```
+<dependency>
+	    <groupId>com.github.mzyq</groupId>
+	    <artifactId>LockView</artifactId>
+	    <version>{VERSION}</version>
+	</dependency>
+```
+
 ## 用法
 ```
 <com.muzi.library.LockView
